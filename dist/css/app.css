@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Oswald;
+    src: url('../font/Oswald-Regular.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Oswald";
+    -webkit-user-select: none;	
+}
+
+#app {
+	display: flex;
+	justify-content: center;
+	background-image: url(../images/background.jpg);
+	background-color: #5b5a5d;
+    background-blend-mode: color-dodge;
+    background-size: cover;
+}
+
+.calendar-container {
+	display: flex;
+	flex-direction: column;
+	background-image: url(../images/wallpaper.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+    max-width: 700px;
+    min-width: 500px;
+	height: 100%;
+	min-height: 400px;
+    box-shadow: 0px 0px 3px 1px #ababab;
+}
+
+.wallpaper-window {
+	flex-grow: 1;
+}
+
+.calendar-header {
+	display: flex;
+	margin: 2px;
+	border-radius: 3px;
+	background-color: rgba(34, 50, 142, 0.7);
+	font-size: 24px;
+	color: #FFF;
+	text-align: right;
+}
+
+.calendar-header .year {
+	width: 70px;
+    padding-right: 10px;
+}
+
+.calendar-header .month {
+	width: 120px;
+	padding-right: 10px;
+}
+
+.calendar-header .control-btns {
+	font-size: 18px;
+}
+
+.calendar-header .control-btn:hover {
+	cursor: pointer;
+	color: #916DDA;
+}
+
+.day-names {
+	display: flex;
+	padding: 0 3px;
+	text-transform: uppercase;
+	color: #FFF;
+	background-color: rgba(34, 50, 142, 0.7);
+}
+
+.day-name {
+	width: calc( 100% / 7 );
+	text-align: center;
+	padding: 5px;
+    font-size: 15px;
+}
+
+.days-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 3px;
+	background-color: rgba(34, 50, 142, 0.7);
+}
+
+.day-block-container {
+	width: calc( 100% / 7 );
+	height: 50px;
+	padding: 2px;
+	box-sizing: border-box;
+}
+
+.day-block {
+	position: relative;
+	height: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	border-radius: 3px;	
+	font-size: 15px;
+	background-color: #BEBEBE;	
+}
+
+.day-block.cur-month {
+	font-size: 18px;
+	background-color: #E7EDF0;
+}
+
+.day-block.today {
+	background-color: #FFFFFF;
+    font-size: 22px;
+    border-radius: 0;
+    border: 2px;
+	border-style: dotted;
+	border-color: #384283;
+}
+
+.day-block .holidays {
+	display: flex;	
+	position: absolute;
+	margin: 5px;
+    top: 0px;
+    right: 0px;
+}
+
+.holidays .holiday {
+    width: 20px;
+    height: 20px;
+	margin-left: -10px;
+	cursor: pointer;
+}
+
+.poya {
+    background-color: #FFF200;
+    border: 1px solid #9C8F17;
+    border-radius: 50%;
+}
+
+.pubbankmerc {
+    background-color: #06A020;
+    border: 1px solid #16511B;
+}
+
+.pubbank {
+    background-color: #5CB1E5;
+    border: 1px solid #0D1985;
+}
+
+.bank {
+    background-color: #E61CEC;
+    border: 1px solid #861F81;
+}
+
+.sunday {
+	color: #FF0000;
+}
+
+.saturday {
+    color: #EA6A00;
+}
+
+.calendar-footer {
+	display: flex;
+	padding: 5px;
+	align-items: center;
+	background-color: rgba(34, 50, 142, 0.7);
+}
+
+.calendar-footer .ref {
+	display: flex;
+	font-size: 10px;
+	font-family: verdana;
+	color: #FFF;
+	padding: 0px 10px;	
+}
+
+.calendar-footer .ref .icon {
+	width: 12px;
+	height: 12px;
+	margin-right: 5px;
+}
+
+.like-us {
+	margin-left: auto;
+	color: #f0f5f9;
+    font-size: 20px;
+}
