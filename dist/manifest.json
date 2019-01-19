@@ -2,8 +2,8 @@
     "manifest_version": 2,
 
     "name": "LK Calendar",
-    "description": "Sri Lanka's calendar with holidays",
-    "version": "4.0",
+    "description": "Sri Lankan Holiday Calendar",
+    "version": "5.0",
     "icons":
     {
         "16": "images/logo-16.png",
