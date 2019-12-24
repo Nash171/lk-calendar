@@ -7,16 +7,15 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Oswald";
-    -webkit-user-select: none;	
+    -webkit-user-select: none;
 }
 
 #app {
 	display: flex;
+  height: 100%;
 	justify-content: center;
-	background-image: url(../images/background.jpg);
+	align-items: flex-end;
 	background-color: #5b5a5d;
-    background-blend-mode: color-dodge;
-    background-size: cover;
 }
 
 .calendar-container {
@@ -25,15 +24,13 @@ body {
 	background-image: url(../images/wallpaper.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
-    max-width: 700px;
-    min-width: 500px;
-	height: 100%;
-	min-height: 400px;
-    box-shadow: 0px 0px 3px 1px #ababab;
+  max-width: 700px;
+  min-width: 500px;
+  box-shadow: 0px 0px 3px 1px #ababab;
 }
 
 .wallpaper-window {
-	flex-grow: 1;
+	height: 320px;
 }
 
 .calendar-header {
@@ -99,9 +96,9 @@ body {
 	height: 100%;
 	padding: 5px;
 	box-sizing: border-box;
-	border-radius: 3px;	
+	border-radius: 3px;
 	font-size: 15px;
-	background-color: #BEBEBE;	
+	background-color: #BEBEBE;
 }
 
 .day-block.cur-month {
@@ -119,7 +116,7 @@ body {
 }
 
 .day-block .holidays {
-	display: flex;	
+	display: flex;
 	position: absolute;
 	margin: 5px;
     top: 0px;
@@ -174,7 +171,7 @@ body {
 	font-size: 10px;
 	font-family: verdana;
 	color: #FFF;
-	padding: 0px 10px;	
+	padding: 0px 10px;
 }
 
 .calendar-footer .ref .icon {

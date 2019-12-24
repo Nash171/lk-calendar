@@ -7,12 +7,12 @@ chrome.browserAction.onClicked.addListener(function() {
         chrome.windows.update(opened_window_id, {
             focused : true
         });
-        
+
         return;
     }
 
     var width = 650;
-    var height = 680;
+    var height = 730;
     var left = ((screen.width / 2) - (width / 2));
     var top = ((screen.height / 2) - (height / 2));
 
