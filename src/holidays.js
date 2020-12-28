@@ -421,4 +421,104 @@ export const holidays = {
         type: HOLIDAY_TYPE.POYA,
         desc: "Unduvap Full Moon Poya Day"
     }],
+    "210114": [{
+        type: HOLIDAY_TYPE.PUBBANKMERC,
+        desc: "Tamil Thai Pongal Day"
+    }],
+    "210128": [{
+        type: HOLIDAY_TYPE.POYA,
+        desc: "Duruthu Full Moon Poya Day"
+    }],
+    "210204": [{
+        type: HOLIDAY_TYPE.PUBBANKMERC,
+        desc: "National Day"
+    }],
+    "210226": [{
+        type: HOLIDAY_TYPE.POYA,
+        desc: "Navam Full Moon Poya Day"
+    }],
+    "210311": [{
+        type: HOLIDAY_TYPE.PUBBANK,
+        desc: "Mahasivarathri Day"
+    }],
+    "210328": [{
+        type: HOLIDAY_TYPE.POYA,
+        desc: "Madin Full Moon Poya Day"
+    }],
+    "210402": [{
+        type: HOLIDAY_TYPE.PUBBANK,
+        desc: "Good Friday"
+    }],
+    "210413": [{
+        type: HOLIDAY_TYPE.PUBBANKMERC,
+        desc: "Day prior to Sinhala & Tamil New Year Day"
+    }],
+    "210414": [{
+        type: HOLIDAY_TYPE.PUBBANKMERC,
+        desc: "Sinhala & Tamil New Year Day"
+    }],
+    "210426": [{
+        type: HOLIDAY_TYPE.POYA,
+        desc: "Bak Full Moon Poya Day"
+    }],
+    "210501": [{
+        type: HOLIDAY_TYPE.PUBBANKMERC,
+        desc: "May Day"
+    }],
+    "210514": [{
+        type: HOLIDAY_TYPE.PUBBANK,
+        desc: "Ramazan Festival Day"
+    }],
+    "210526": [{
+        type: HOLIDAY_TYPE.POYA,
+        desc: "Vesak Full Moon Poya Day"
+    }],
+    "210527": [{
+        type: HOLIDAY_TYPE.PUBBANKMERC,
+        desc: "Day following Vesak Full Moon Poya Day"
+    }],
+    "210624": [{
+        type: HOLIDAY_TYPE.POYA,
+        desc: "Poson Full Moon Poya Day"
+    }],
+    "210721": [{
+        type: HOLIDAY_TYPE.PUBBANK,
+        desc: "Hadji Festival Day"
+    }],
+    "210723": [{
+        type: HOLIDAY_TYPE.POYA,
+        desc: "Esala Full Moon Poya Day"
+    }],
+    "210822": [{
+        type: HOLIDAY_TYPE.POYA,
+        desc: "Nikini Full Moon Poya Day"
+    }],
+    "210920": [{
+        type: HOLIDAY_TYPE.POYA,
+        desc: "Binara Full Moon Poya Day"
+    }],
+    "211019": [{
+        type: HOLIDAY_TYPE.PUBBANKMERC,
+        desc: "Holy Prophet’s Birthday"
+    }],
+    "211020": [{
+        type: HOLIDAY_TYPE.POYA,
+        desc: "Vap Full Moon Poya Day"
+    }],
+    "211104": [{
+        type: HOLIDAY_TYPE.PUBBANK,
+        desc: "Deepavali Festival Day"
+    }],
+    "211118": [{
+        type: HOLIDAY_TYPE.POYA,
+        desc: "Ill Full Moon Poya Day"
+    }],
+    "211218": [{
+        type: HOLIDAY_TYPE.POYA,
+        desc: "Unduvap Full Moon Poya Day"
+    }],
+    "211225": [{
+        type: HOLIDAY_TYPE.PUBBANKMERC,
+        desc: "Christmas Day"
+    }],
 }
