@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "LK Calendar",
     "description": "SriLanka Holiday Calendar",
-    "version": "7.0",
+    "version": "8.0",
     "icons":
     {
         "16": "images/logo-16.png",

@@ -11,22 +11,34 @@ const config = {
         filename: 'bundle.js'
     },
     devServer: {
-        contentBase: './dist'
+        static: {
+            directory: path.resolve(__dirname, 'dist'),
+        },
+        open: true,
     },
     module: {
-        loaders: [{
-            test: /\.jsx?/,
-            include: src,
-            loader: 'babel-loader'
-        }]
+        rules: [
+            {
+                test: /\.jsx?/,
+                include: src,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
+            }
+        ]
     },
     plugins: [
-        new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
-        new UglifyJSPlugin(),
-        new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('production')
+        new webpack.IgnorePlugin({
+            resourceRegExp: /^\.\/locale$/,
+            contextRegExp: /moment$/,
         })
-    ]
+    ],
+    optimization: {
+        minimizer: [new UglifyJSPlugin()],
+    },
 };
 
 module.exports = config;
