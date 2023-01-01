@@ -1,6 +1,6 @@
 var opened_window_id = null;
 
-chrome.browserAction.onClicked.addListener(function() {
+chrome.action.onClicked.addListener(async function() {
 
     if(opened_window_id!=null){
 
@@ -10,11 +10,11 @@ chrome.browserAction.onClicked.addListener(function() {
 
         return;
     }
-
+    const [info] = await chrome.system.display.getInfo();
     var width = 650;
     var height = 730;
-    var left = ((screen.width / 2) - (width / 2));
-    var top = ((screen.height / 2) - (height / 2));
+    var left = ((info.bounds.width / 2) - (width / 2));
+    var top = ((info.bounds.height / 2) - (height / 2));
 
     chrome.windows.create({
         url: 'index.html',
