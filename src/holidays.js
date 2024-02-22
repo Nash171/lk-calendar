@@ -320,7 +320,7 @@ export const holidays = {
         type: HOLIDAY_TYPE.PUBBANKMERC,
         desc: "National Day"
     }],
-    "240224": [{
+    "240223": [{
         type: HOLIDAY_TYPE.POYA,
         desc: "Navam Full Moon Poya Day"
     }],
@@ -336,7 +336,7 @@ export const holidays = {
         type: HOLIDAY_TYPE.PUBBANK,
         desc: "Good Friday"
     }],
-    "240410": [{
+    "240411": [{
         type: HOLIDAY_TYPE.PUBBANK,
         desc: "Ramazan Festival Day"
     }],
