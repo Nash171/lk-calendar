@@ -21,7 +21,7 @@ body {
 .calendar-container {
 	display: flex;
 	flex-direction: column;
-	background-image: url(../images/wallpaper.jpeg);
+	background-image: url(../images/wallpaper.webp);
 	background-size: contain;
 	background-repeat: no-repeat;
   max-width: 700px;
