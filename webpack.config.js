@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const path = require('path');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const src = path.resolve(__dirname, 'src');
 
@@ -37,7 +36,7 @@ const config = {
         })
     ],
     optimization: {
-        minimizer: [new UglifyJSPlugin()],
+        minimize: true,
     },
 };
 
