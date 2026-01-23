@@ -54,3 +54,10 @@ export function getDays(year, month) {
 
     return days;
 }
+
+export function getWallpaperImage() {
+    // Rotate through 3 wallpaper images based on day of month
+    const day = today.date();
+    const imageNumber = (day % 3) + 1;
+    return `../images/wallpaper/${imageNumber}.png`;
+}

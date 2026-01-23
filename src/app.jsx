@@ -11,7 +11,8 @@ class App extends React.Component {
     	this.state = {
     		year: util.getYear(),
     		month: util.getMonth(),
-    		days: util.getDays()
+    		days: util.getDays(),
+    		wallpaper: util.getWallpaperImage()
     	};
 
     	setInterval(() => {
@@ -29,7 +30,8 @@ class App extends React.Component {
   		this.setState({
 			year: util.getYear(),
     		month: util.getMonth(),
-    		days: util.getDays()
+    		days: util.getDays(),
+    		wallpaper: util.getWallpaperImage()
   		});
 	}
 	  
@@ -55,7 +57,7 @@ class App extends React.Component {
 
     render() {
         return (
-        	<div className='calendar-container'>
+        	<div className='calendar-container' style={{backgroundImage: `url(${this.state.wallpaper})`}}>
         		<div className='wallpaper-window'></div>
 
 				<CalendarHeader year={this.state.year} nextYear={this.nextYear} prevYear={this.prevYear} month={this.state.month} nextMonth={this.nextMonth}  prevMonth={this.prevMonth}/>
