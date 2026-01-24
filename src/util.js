@@ -56,8 +56,7 @@ export function getDays(year, month) {
 }
 
 export function getWallpaperImage() {
-    // Rotate through 3 wallpaper images based on day of month
-    const day = today.date();
-    const imageNumber = (day % 3) + 1;
+    // Get a random wallpaper image from 1 to 45
+    const imageNumber = Math.floor(Math.random() * 45) + 1;
     return `../images/wallpaper/${imageNumber}.png`;
 }
