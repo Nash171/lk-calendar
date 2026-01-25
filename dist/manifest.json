@@ -18,5 +18,8 @@
     "background": {
         "service_worker": "eventPage.js"
     },
-    "permissions": ["system.display"]
+    "permissions": ["system.display"],
+    "host_permissions": [
+        "https://*.supabase.co/*"
+    ]
 }

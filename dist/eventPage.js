@@ -11,8 +11,8 @@ chrome.action.onClicked.addListener(async function() {
         return;
     }
     const [info] = await chrome.system.display.getInfo();
-    var width = 650;
-    var height = 730;
+    var width = 576;
+    var height = 745;
     var left = ((info.bounds.width / 2) - (width / 2));
     var top = ((info.bounds.height / 2) - (height / 2));
 

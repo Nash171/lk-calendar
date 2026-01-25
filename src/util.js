@@ -58,5 +58,5 @@ export function getDays(year, month) {
 export function getWallpaperImage() {
     // Get a random wallpaper image from 1 to 45
     const imageNumber = Math.floor(Math.random() * 45) + 1;
-    return `../images/wallpaper/${imageNumber}.png`;
+    return `https://dqyacwlaweoycqmookhe.supabase.co/storage/v1/object/public/wallpapers/${imageNumber}.png`;
 }

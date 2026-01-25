@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const { warn } = require('console');
 
 const src = path.resolve(__dirname, 'src');
 
@@ -15,6 +16,12 @@ const config = {
             directory: path.resolve(__dirname, 'dist'),
         },
         open: true,
+        client: {
+            overlay: {
+                errors: false,
+                warnings: false,
+            },
+        },
     },
     module: {
         rules: [
