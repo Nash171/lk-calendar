@@ -30,8 +30,7 @@ class App extends React.Component {
   		this.setState({
 			year: util.getYear(),
     		month: util.getMonth(),
-    		days: util.getDays(),
-    		wallpaper: util.getWallpaperImage()
+    		days: util.getDays()
   		});
 	}
 	  
